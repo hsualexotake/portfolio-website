@@ -24,19 +24,24 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        Despite intially planning to study{" "}
-        <span className="font-medium">economics</span>, I found my true passion
-        after a friend introduced me to the endless potential of programming.
-        Ever since, I have been on a mission to constantly challenge myself and
-        learn new technologies.{" "}
+        From a young age, my passion for online gaming fueled a curiosity about the technology 
+        that powered my gaming experiences. Initially, I focused on upgrading my computer's hardware 
+        to gain a competitive edge. As I began assembling my own machines, this fascination only grew. 
+        However, when financial constraints limited further hardware upgrades, I turned to software 
+        solutions. I learned to maximize performance through software solutions like GPU overclocking and 
+        driver optimization. This shift towards harnessing software’s full potential deepened my appreciation 
+        for its capabilities, inspiring me to pursue a degree in Computer Science at NYU.
+        
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="font-medium">love</span> the
         satisfaction of finally figuring out a solution to a problem. I mostly
         work with{" "}
-        <span className="font-medium">Python, TypeScript, and Java</span>. I am
-        also familiar with JavaScript, C and x86 Assembly. I am always looking
+        <span className="font-medium">Python, JavaScript, and Java</span>. I am
+        also familiar with C and x86 Assembly. I am always looking
         to learn. I am currently looking for an{" "}
-        <span className="font-medium">internship</span> as a software developer.
+        <span className="font-medium">internship</span> as a software engineer.
+
+        
       </p>
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy studying
