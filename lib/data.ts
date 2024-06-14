@@ -10,6 +10,7 @@ import { MdOutlineGolfCourse } from "react-icons/md";
 import { FaDatabase } from "react-icons/fa";
 import { TiChartBar } from "react-icons/ti";
 import { RiComputerFill } from "react-icons/ri";
+import { IoAccessibility } from "react-icons/io5";
 
 
 export const links = [
@@ -44,9 +45,9 @@ export const experiencesData = [
     title: "New York University",
     location: "Major: Computer Science",
     description:
-      "Expected Graduation: Spring 2025",
+      "Expected Graduation: Spring 2025/Winter 2025",
     icon: React.createElement(IoSchoolSharp),
-    date: "Sep. 2021 - May 2025",
+    date: "Sep. 2021 - May/Dec. 2025",
   },
   {
     title: "Constellation",
@@ -74,11 +75,19 @@ export const experiencesData = [
   },
   {
     title: "83SM Capital",
-    location: "Co-Founder",
+    location: "Software Engineer",
     description:
       "Building a Python-based pairs trading algorithm to conduct statistical arbitrage on 400+ closed-end funds using time series analysis",
     icon: React.createElement(RiComputerFill),
     date: "May 2023 - Present",
+  },
+  {
+    title: "MetLife",
+    location: "Software Developer Intern",
+    description:
+      "Current Internship",
+    icon: React.createElement(IoAccessibility),
+    date: "June 2024 - Present",
   },
 
 ] as const;
