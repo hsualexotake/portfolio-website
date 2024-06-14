@@ -28,9 +28,8 @@ export default function Intro() {
         transition={{ type: "spring", duration: 10 }}
       >
         <span className="font-bold">Hi, I'm Alex!</span> I'm a{" "}
-        <span className="font-bold">junior at New York University</span>{" "}
-        studying <span className="font-bold">Computer Science</span>. I love to{" "}
-        <span className="italic">build things</span>. Scroll to learn more about
+        <span className="font-bold">student at New York University</span>{" "}
+        studying <span className="font-bold">Computer Science</span>. Scroll to learn more about
         me!
       </motion.h1>
 
