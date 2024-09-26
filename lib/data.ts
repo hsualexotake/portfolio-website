@@ -85,9 +85,9 @@ export const experiencesData = [
     title: "MetLife",
     location: "Software Developer Intern",
     description:
-      "Current Internship",
+      "Created a Python-based automation for configuration management and reduced latency by 200ms per task execution by implementing SSH key-based authentication",
     icon: React.createElement(IoAccessibility),
-    date: "June 2024 - Present",
+    date: "June 2024 - August 2024",
   },
 
 ] as const;
@@ -104,7 +104,7 @@ export const projectsData = [
     title: "83SM Capital",
     description:
       "Currently building an automated pairs-trading algorithm to capitalize on the inefficiencies of closed-end funds.",
-    tags: ["Python", "IBKR", "yfinance", "backtrader", "selenium", "bs4"],
+    tags: ["Python", "PostgreSQL", "IBKR", "yfinance", "backtrader", "selenium", "bs4"],
     imageUrl: smpic,
   },
   {
@@ -122,6 +122,8 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "C",
+  "PostgreSQL",
+  "MongoDB",
   "x86 Assembly",
   "PyTorch",
   "OpenCV",
