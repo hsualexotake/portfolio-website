@@ -4,14 +4,14 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import golfballdetect from "@/public/golfballdetect.png";
 import smpic from "@/public/smpic.png";
+import brewedpic from "@/public/brewedpic.png";
 import personalportfoliopic from "@/public/personalportfoliopic.png";
-import { IoSchoolOutline, IoSchoolSharp} from "react-icons/io5";
+import { IoSchoolOutline, IoSchoolSharp } from "react-icons/io5";
 import { MdOutlineGolfCourse } from "react-icons/md";
 import { FaDatabase } from "react-icons/fa";
 import { TiChartBar } from "react-icons/ti";
 import { RiComputerFill } from "react-icons/ri";
 import { IoAccessibility } from "react-icons/io5";
-
 
 export const links = [
   {
@@ -44,8 +44,7 @@ export const experiencesData = [
   {
     title: "New York University",
     location: "Major: Computer Science",
-    description:
-      "Expected Graduation: Spring 2025/Winter 2025",
+    description: "Expected Graduation: Spring 2025/Winter 2025",
     icon: React.createElement(IoSchoolSharp),
     date: "Sep. 2021 - May/Dec. 2025",
   },
@@ -89,7 +88,6 @@ export const experiencesData = [
     icon: React.createElement(IoAccessibility),
     date: "June 2024 - August 2024",
   },
-
 ] as const;
 
 export const projectsData = [
@@ -103,15 +101,45 @@ export const projectsData = [
   {
     title: "83SM Capital",
     description:
-      "Currently building an automated pairs-trading algorithm to capitalize on the inefficiencies of closed-end funds.",
-    tags: ["Python", "PostgreSQL", "IBKR", "yfinance", "backtrader", "selenium", "bs4"],
+      "Building an automated pairs-trading algorithm to capitalize on the inefficiencies of closed-end funds. Research funded by NYU Dean Research Fund.",
+    tags: [
+      "Python",
+      "PostgreSQL",
+      "TimescaleDB",
+      "IBKR",
+      "yfinance",
+      "backtrader",
+    ],
     imageUrl: smpic,
+  },
+  {
+    title: "Brewed",
+    description:
+      "Collaborated in a team of 4, utilizing Git, to develop a full-stack personalized bar recommendation app, supporting 10+ users",
+    tags: [
+      "JavaScript",
+      "MongoDB",
+      "Docker",
+      "HTML",
+      "CSS",
+      "Sk-learn",
+      "Digital Ocean",
+    ],
+    imageUrl: brewedpic,
   },
   {
     title: "Personal Portfolio",
     description:
       "This website you are on serves to showcase my skills, projects, and professional experience. Contains a light/dark mode and an email feature.",
-    tags: ["TypeScript", "React", "Next.js", "Tailwind", "Framer", "HTML", "CSS"],
+    tags: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Framer",
+      "HTML",
+      "CSS",
+    ],
     imageUrl: personalportfoliopic,
   },
 ] as const;
@@ -131,13 +159,15 @@ export const skillsData = [
   "HTML",
   "CSS",
   "React",
-  "Next.js",
+  "Express.js",
   "Node.js",
+  "Flask",
   "Framer Motion",
   "Tailwind",
-  "Django",
-  "Git", 
+  "Git",
+  "Docker",
   "Selenium",
   "Beautiful Soup 4",
-  "R"
+  "Ansible"
+  
 ] as const;
