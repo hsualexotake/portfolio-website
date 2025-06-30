@@ -27,9 +27,9 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 10 }}
       >
-        <span className="font-bold">Hi, I'm Alex!</span> I'm a{" "}
-        <span className="font-bold">student at New York University</span>{" "}
-        studying <span className="font-bold">Computer Science</span>. Scroll to learn more about
+        <span className="font-bold">Hi, I'm Alex!</span> I recently graduated from {" "}
+        <span className="font-bold">New York University</span>{" "}
+        with a degree in <span className="font-bold">Computer Science</span>. Scroll to learn more about
         me!
       </motion.h1>
 

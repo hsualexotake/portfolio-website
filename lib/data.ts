@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import golfballdetect from "@/public/golfballdetect.png";
 import smpic from "@/public/smpic.png";
 import brewedpic from "@/public/brewedpic.png";
+import fruition from "@/public/fruition.png";
+import timemachine from "@/public/timemachine.png";
 import personalportfoliopic from "@/public/personalportfoliopic.png";
 import { IoSchoolOutline, IoSchoolSharp } from "react-icons/io5";
 import { MdOutlineGolfCourse } from "react-icons/md";
@@ -44,9 +46,9 @@ export const experiencesData = [
   {
     title: "New York University",
     location: "Major: Computer Science",
-    description: "Expected Graduation: Spring 2025/Winter 2025",
+    description: "Graduated May 2025",
     icon: React.createElement(IoSchoolSharp),
-    date: "Sep. 2021 - May/Dec. 2025",
+    date: "Sep. 2021 - May 2025",
   },
   {
     title: "Constellation",
@@ -88,6 +90,14 @@ export const experiencesData = [
     icon: React.createElement(IoAccessibility),
     date: "June 2024 - August 2024",
   },
+  {
+    title: "NYU Dean Undergrad Research Fund",
+    location: "Research Fellow",
+    description:
+      "Awarded research grant by NYU to analyze complex behavioral patterns of CEFs. Designed and optimized PostgreSQL database schemas to store and query 20M+ rows of time-series financial data",
+    icon: React.createElement(TiChartBar),
+    date: "Oct 2024 - May 2025",
+  },
 ] as const;
 
 export const projectsData = [
@@ -111,6 +121,34 @@ export const projectsData = [
       "backtrader",
     ],
     imageUrl: smpic,
+  },
+  {
+    title: "Fruition (NYU Startup Accelerator Program) ",
+    description:
+      "Worked in a team of 3 to build a project management platform supporting collaboration for 40+ research groups at NYU.",
+    tags: [
+      "Node.js",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+      "CI/CD",
+      "Supabase",
+    ],
+    imageUrl: fruition,
+  },
+  {
+    title: "Wayback Machine",
+    description:
+      "A full-stack web app, allowing users to capture website snapshots with recursive link crawling and view them later. Essentially a personal wayback machine for any website.",
+    tags: [
+      "Node.js",
+      "React",
+      "TailwindCSS",
+      "Axios",
+      "DayJS",
+    ],
+    imageUrl: timemachine,
   },
   {
     title: "Brewed",
@@ -150,24 +188,26 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "C",
+  "Next.js",
+  "Node.js",
+  "Express.js",
+  "React",
   "PostgreSQL",
   "MongoDB",
+  "Docker",
+  "TimescaleDB",
   "x86 Assembly",
   "PyTorch",
   "OpenCV",
   "Sci-kit Learn",
   "HTML",
   "CSS",
-  "React",
-  "Express.js",
-  "Node.js",
   "Flask",
   "Framer Motion",
   "Tailwind",
   "Git",
-  "Docker",
   "Selenium",
   "Beautiful Soup 4",
   "Ansible"
-  
+
 ] as const;
