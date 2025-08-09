@@ -24,31 +24,12 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        From a young age, my passion for online gaming fueled a curiosity about the technology 
-        that powered my gaming experiences. Initially, I focused on upgrading my computer's hardware 
-        to gain a competitive edge. As I began assembling my own machines, this fascination only grew. 
-        However, when financial constraints limited further hardware upgrades, I turned to software 
-        solutions. I learned to maximize performance through software solutions like GPU overclocking and 
-        driver optimization. This shift towards harnessing software’s full potential deepened my appreciation 
-        for its capabilities, inspiring me to pursue a degree in Computer Science at NYU.
-        
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="font-medium">love</span> the
-        satisfaction of finally figuring out a solution to a problem. I mostly
-        work with{" "}
-        <span className="font-medium">Python, JavaScript, and Java</span>. I am
-        also familiar with C and x86 Assembly. I am always looking
-        to learn. I am currently looking for an{" "}
-        <span className="font-medium">internship</span> as a software engineer.
+        In high school, I was passionate about reselling sneakers. What started as a side hustle quickly showed me how much time repetitive, manual work—like tracking inventory and managing orders—could take.
+        I began tinkering with small tools to automate parts of the process, sparking my interest in computer science and the idea that technology could make work easier and more efficient.
+        <br /><br />Since then, I’ve worked across both startups and large companies—developing web scraping pipelines at Constellation, building machine learning systems at Hawkeye, and creating computer vision tools for athletes at Ideas Lab.
+        At MetLife, I built automation for DevOps processes, and at Cartage (YC S24), I developed AI agents that handled hundreds of freight orders daily, reinforcing my love for fast-paced, impactful work.<br /><br />
 
-        
-      </p>
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy studying
-        fashion, playing basketball, and hanging out with my bunny Ollie. I also
-        enjoy <span className="font-medium">learning new things</span>. I am
-        currently learning how to{" "}
-        <span className="font-medium">speak French</span>.
+        When I’m not coding, you’ll usually find me studying fashion, playing basketball, or hanging out with my bunny, Ollie. I also love picking up new skills. Right now, I’m learning French. I’m always happy to connect and chat—whether it’s about tech, startups, or anything in between.
       </p>
     </motion.section>
   );

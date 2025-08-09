@@ -4,7 +4,6 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import golfballdetect from "@/public/golfballdetect.png";
 import smpic from "@/public/smpic.png";
-import brewedpic from "@/public/brewedpic.png";
 import fruition from "@/public/fruition.png";
 import timemachine from "@/public/timemachine.png";
 import personalportfoliopic from "@/public/personalportfoliopic.png";
@@ -145,25 +144,9 @@ export const projectsData = [
       "Node.js",
       "React",
       "TailwindCSS",
-      "Axios",
       "DayJS",
     ],
     imageUrl: timemachine,
-  },
-  {
-    title: "Brewed",
-    description:
-      "Collaborated in a team of 4, utilizing Git, to develop a full-stack personalized bar recommendation app, supporting 10+ users",
-    tags: [
-      "JavaScript",
-      "MongoDB",
-      "Docker",
-      "HTML",
-      "CSS",
-      "Sk-learn",
-      "Digital Ocean",
-    ],
-    imageUrl: brewedpic,
   },
   {
     title: "Personal Portfolio",
