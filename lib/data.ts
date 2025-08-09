@@ -171,6 +171,7 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "C",
+  "LangChain",
   "Next.js",
   "Node.js",
   "Express.js",
@@ -183,14 +184,13 @@ export const skillsData = [
   "PyTorch",
   "OpenCV",
   "Sci-kit Learn",
-  "HTML",
-  "CSS",
+  "HTML/CSS",
   "Flask",
   "Framer Motion",
   "Tailwind",
-  "Git",
+  "Browserbase",
   "Selenium",
-  "Beautiful Soup 4",
-  "Ansible"
+  "Beautiful Soup 4"
+
 
 ] as const;
