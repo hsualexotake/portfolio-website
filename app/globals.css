@@ -11,4 +11,52 @@ html.dark{
 }
 .borderBlack {
     @apply border border-black/10;
+}
+
+/* Section Typography */
+.section-title {
+  @apply text-[#1e1e1e] dark:text-gray-100 font-medium
+         text-[24px] lg:text-[40px]
+         mb-6 lg:mb-0
+         lg:col-span-3;
+  letter-spacing: -0.05em;
+  line-height: 1.2;
+}
+@screen lg {
+  .section-title {
+    letter-spacing: -0.06em;
   }
+}
+
+.section-content-text {
+  @apply text-[18px] md:text-[28px] lg:text-[40px] font-medium;
+  letter-spacing: -0.06em;
+  line-height: 1.2;
+}
+
+/* Intro Typography */
+.intro-name {
+  @apply font-medium text-[#1e1e1e] dark:text-gray-100
+         text-[32px] md:text-[48px] lg:text-[56px]
+         mb-8 lg:mb-0;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.05em;
+}
+@screen lg {
+  .intro-name {
+    letter-spacing: -2.8px;
+  }
+}
+
+.intro-nav {
+  @apply flex font-medium text-[#1e1e1e] dark:text-gray-100
+         flex-wrap gap-4 justify-center text-lg
+         lg:flex-col lg:items-start lg:gap-[3px] lg:text-[56px] lg:justify-start;
+  font-family: 'Inter', sans-serif;
+  line-height: 0.9;
+}
+@screen lg {
+  .intro-nav {
+    letter-spacing: -2.8px;
+  }
+}

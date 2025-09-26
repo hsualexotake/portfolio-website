@@ -43,59 +43,58 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "New York University",
-    location: "Major: Computer Science",
-    description: "Graduated May 2025",
-    icon: React.createElement(IoSchoolSharp),
-    date: "Sep. 2021 - May 2025",
-  },
-  {
-    title: "Constellation",
-    location: "Data Science Intern",
+    company: "Cartage (YC S24)",
+    title: "Product Engineer",
+    year: "2025",
     description:
-      "Designed a Python script using Selenium and Beautiful Soup 4 packages to automate the extraction of 5M+ points of data",
-    icon: React.createElement(FaDatabase),
-    date: "Jun. 2022 - Aug. 2022",
-  },
-  {
-    title: "Hawkeye Investment Management",
-    location: "Software Engineer Intern, Machine Learning",
-    description:
-      "Developed an ML model in high dimensional space to identify optimal pairings for hedge",
-    icon: React.createElement(TiChartBar),
-    date: "Jan. 2023 - May 2023",
-  },
-  {
-    title: "Ideas Lab",
-    location: "Software Engineer Intern, Machine Learning",
-    description:
-      "Creating an object detection algorithm using computer vision (YOLOv8) to track movements of a golf swing in a live video",
-    icon: React.createElement(MdOutlineGolfCourse),
-    date: "May 2023 - Aug 2023",
-  },
-  {
-    title: "83SM Capital",
-    location: "Software Engineer",
-    description:
-      "Building a Python-based pairs trading algorithm to conduct statistical arbitrage on 400+ closed-end funds using time series analysis",
+      "Building AI-powered tools for modern development workflows. Working on core product features and infrastructure.",
     icon: React.createElement(RiComputerFill),
-    date: "May 2023 - Present",
+    date: "2025 - Present",
   },
   {
-    title: "MetLife",
-    location: "Software Developer Intern",
+    company: "fruition (NYU Accelerator)",
+    title: "Product Engineer",
+    year: "2025",
+    description:
+      "Worked in a team of 3 to build a project management platform supporting collaboration for 40+ research groups at NYU.",
+    icon: React.createElement(RiComputerFill),
+    date: "Jan 2025 - May 2025",
+  },
+  {
+    company: "NYU Courant",
+    title: "Researcher",
+    year: "2025",
+    description:
+      "Awarded research grant by NYU to analyze complex behavioral patterns of CEFs. Designed and optimized PostgreSQL database schemas to store and query 20M+ rows of time-series financial data",
+    icon: React.createElement(TiChartBar),
+    date: "Oct 2024 - May 2025",
+  },
+  {
+    company: "MetLife",
+    title: "Software Engineer",
+    year: "2024",
     description:
       "Created a Python-based automation for configuration management and reduced latency by 200ms per task execution by implementing SSH key-based authentication",
     icon: React.createElement(IoAccessibility),
     date: "June 2024 - August 2024",
   },
   {
-    title: "NYU Dean Undergrad Research Fund",
-    location: "Research Fellow",
+    company: "Ideas Lab",
+    title: "Software Engineer",
+    year: "2023",
     description:
-      "Awarded research grant by NYU to analyze complex behavioral patterns of CEFs. Designed and optimized PostgreSQL database schemas to store and query 20M+ rows of time-series financial data",
-    icon: React.createElement(TiChartBar),
-    date: "Oct 2024 - May 2025",
+      "Creating an object detection algorithm using computer vision (YOLOv8) to track movements of a golf swing in a live video",
+    icon: React.createElement(MdOutlineGolfCourse),
+    date: "May 2023 - Aug 2023",
+  },
+  {
+    company: "Constellation",
+    title: "Data Scientist",
+    year: "2022",
+    description:
+      "Designed a Python script using Selenium and Beautiful Soup 4 packages to automate the extraction of 5M+ points of data",
+    icon: React.createElement(FaDatabase),
+    date: "Jun. 2022 - Aug. 2022",
   },
 ] as const;
 
