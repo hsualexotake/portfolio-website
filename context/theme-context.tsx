@@ -1,5 +1,4 @@
 "use client";
-import { error } from "console";
 import React, { useEffect, useState, createContext, useContext } from "react";
 
 type Theme = "light" | "dark";
