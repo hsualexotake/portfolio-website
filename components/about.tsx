@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useSectionInView } from "@/lib/hooks";
+import { Typewriter } from "@/components/ui/typewriter";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -26,7 +27,16 @@ export default function About() {
               and design. Currently based in New York City.
             </p>
             <p className="section-content-text mb-4">
-              I have experience with software engineering and design
+              I have experience with{" "}
+              <Typewriter
+                text={["software engineering", "product design"]}
+                speed={70}
+                className="text-yellow-500"
+                waitTime={1500}
+                deleteSpeed={40}
+                cursorChar="_"
+                cursorClassName="ml-1"
+              />
             </p>
             <p className="section-content-text">
               fashion and tech
