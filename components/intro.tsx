@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Component as AnimatedBackground } from "@/components/ui/open-ai-codex-animated-background";
+import { TextScramble } from "@/components/ui/text-scramble";
 import VerticalNavbar from "@/components/vertical-navbar";
 
 export default function Intro() {
@@ -12,7 +13,14 @@ export default function Intro() {
         {/* Name */}
         <div className="lg:col-span-5">
           <div className="intro-name">
-            <p>Alex Otake Hsu</p>
+            <TextScramble
+              as="p"
+              duration={1.2}
+              speed={0.03}
+              trigger={true}
+            >
+              Alex Otake Hsu
+            </TextScramble>
           </div>
         </div>
 
