@@ -45,6 +45,7 @@ export function TextScramble({
     const interval = setInterval(() => {
       let scrambled = '';
       const progress = step / steps;
+      const revealedCount = Math.floor(progress * text.length);
 
       for (let i = 0; i < text.length; i++) {
         if (text[i] === ' ') {
@@ -52,7 +53,7 @@ export function TextScramble({
           continue;
         }
 
-        if (progress * text.length > i) {
+        if (i < revealedCount) {
           scrambled += text[i];
         } else {
           scrambled +=
@@ -96,9 +97,10 @@ export function TextScramble({
   return (
     <MotionComponent
       className={className}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: mounted ? 1 : 0 }}
-      transition={{ duration: 1.75, ease: "easeOut" }}
+      initial={{ clipPath: 'inset(0 100% 0 0)' }}
+      animate={{ clipPath: mounted ? 'inset(0 0% 0 0)' : 'inset(0 100% 0 0)' }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      style={{ display: 'inline-block' }}
       {...props}
     >
       {displayText || <span style={{ visibility: 'hidden' }}>{text}</span>}
