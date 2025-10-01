@@ -54,7 +54,7 @@ export const experiencesData = [
       "Building AI-powered tools for modern development workflows. Working on core product features and infrastructure.",
     icon: React.createElement(RiComputerFill),
     date: "2025 - Present",
-    color: "#F54927",
+    color: "#ff4000",
     textColor: "#ffffff",
     imageUrl: cartage,
   },
@@ -67,7 +67,7 @@ export const experiencesData = [
     icon: React.createElement(RiComputerFill),
     date: "Jan 2025 - May 2025",
     color: "#ffffff",
-    textColor: "#1640D9",
+    textColor: "#5D3FD3",
     imageUrl: fruition,
   },
   {
@@ -91,7 +91,7 @@ export const experiencesData = [
     icon: React.createElement(IoAccessibility),
     date: "June 2024 - August 2024",
     color: "#ffffff",
-    textColor: "#4CBB17",
+    textColor: "#1434A4",
     imageUrl: metlife,
   },
   {
@@ -115,7 +115,7 @@ export const experiencesData = [
     icon: React.createElement(FaDatabase),
     date: "Jun. 2022 - Aug. 2022",
     color: "#ffffff",
-    textColor: "#0A0212",
+    textColor: "#E30B5C",
     imageUrl: constellation,
   },
 ] as const;
