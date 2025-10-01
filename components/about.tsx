@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section
       ref={ref}
-      className="bg-white dark:bg-gray-900 relative min-h-screen w-full flex items-center py-20"
+      className="bg-white dark:bg-stone-950 relative min-h-screen w-full flex items-center py-20"
       id="about"
     >
       <div className="w-full max-w-[1440px] mx-auto px-4 md:px-10 lg:px-12">
