@@ -1,12 +1,23 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"], weight: ['400', '500', '600'] });
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ['500', '600', '700', '800'],
+  variable: '--font-display'
+});
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ['400', '500', '600'],
+  variable: '--font-mono'
+});
 
 export const metadata = {
   title: "Alex Hsu | Portfolio",
@@ -22,10 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-white dark:bg-gray-900 text-black dark:text-gray-100`}
+        className={`${inter.className} ${plusJakarta.variable} ${robotoMono.variable} bg-white dark:bg-stone-950 text-black dark:text-white`}
       >
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
+            <Header />
             {children}
             <Footer />
             <Toaster position="top-right" />

@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import golfballdetect from "@/public/golfballdetect.png";
 import smpic from "@/public/smpic.png";
 import fruition from "@/public/fruition.png";
+import cartage from "@/public/cartage.png";
+import ideaslab from "@/public/ideaslab.png";
+import constellation from "@/public/constellation.png";
+import metlife from "@/public/metlife.png";
 import timemachine from "@/public/timemachine.png";
 import personalportfoliopic from "@/public/personalportfoliopic.png";
 import { IoSchoolOutline, IoSchoolSharp } from "react-icons/io5";
@@ -20,6 +24,10 @@ export const links = [
     hash: "#home",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "About",
     hash: "#about",
   },
@@ -30,10 +38,6 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
@@ -50,15 +54,21 @@ export const experiencesData = [
       "Building AI-powered tools for modern development workflows. Working on core product features and infrastructure.",
     icon: React.createElement(RiComputerFill),
     date: "2025 - Present",
+    color: "#F54927",
+    textColor: "#ffffff",
+    imageUrl: cartage,
   },
   {
-    company: "fruition (NYU Accelerator)",
+    company: "Fruition (NYU Startup Accelerator)",
     title: "Product Engineer",
     year: "2025",
     description:
       "Worked in a team of 3 to build a project management platform supporting collaboration for 40+ research groups at NYU.",
     icon: React.createElement(RiComputerFill),
     date: "Jan 2025 - May 2025",
+    color: "#ffffff",
+    textColor: "#1640D9",
+    imageUrl: fruition,
   },
   {
     company: "NYU Courant",
@@ -68,6 +78,9 @@ export const experiencesData = [
       "Awarded research grant by NYU to analyze complex behavioral patterns of CEFs. Designed and optimized PostgreSQL database schemas to store and query 20M+ rows of time-series financial data",
     icon: React.createElement(TiChartBar),
     date: "Oct 2024 - May 2025",
+    color: "#57068c",
+    textColor: "#ffffff",
+    imageUrl: smpic,
   },
   {
     company: "MetLife",
@@ -77,6 +90,9 @@ export const experiencesData = [
       "Created a Python-based automation for configuration management and reduced latency by 200ms per task execution by implementing SSH key-based authentication",
     icon: React.createElement(IoAccessibility),
     date: "June 2024 - August 2024",
+    color: "#ffffff",
+    textColor: "#4CBB17",
+    imageUrl: metlife,
   },
   {
     company: "Ideas Lab",
@@ -86,15 +102,21 @@ export const experiencesData = [
       "Creating an object detection algorithm using computer vision (YOLOv8) to track movements of a golf swing in a live video",
     icon: React.createElement(MdOutlineGolfCourse),
     date: "May 2023 - Aug 2023",
+    color: "#7832ff",
+    textColor: "#FFFFFF",
+    imageUrl: ideaslab,
   },
   {
     company: "Constellation",
-    title: "Data Scientist",
+    title: "Data Science",
     year: "2022",
     description:
       "Designed a Python script using Selenium and Beautiful Soup 4 packages to automate the extraction of 5M+ points of data",
     icon: React.createElement(FaDatabase),
     date: "Jun. 2022 - Aug. 2022",
+    color: "#ffffff",
+    textColor: "#0A0212",
+    imageUrl: constellation,
   },
 ] as const;
 

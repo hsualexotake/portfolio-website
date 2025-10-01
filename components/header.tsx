@@ -1,78 +1,87 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { TextScramble } from "@/components/ui/text-scramble";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
+  // Filter links to show only specific ones (exclude Home and Skills)
+  const navLinks = links.filter(link =>
+    ["About", "Projects", "Experience", "Contact"].includes(link.name)
+  );
+
   return (
-    <header className="z-[999] relative">
-      <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
-        //added
-        transition={{
-          ease: "linear",
-          duration: 2,
-          x: { duration: 1 },
-        }}
-        //
-      ></motion.div>
-
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
-          {links.map((link) => (
-            <motion.li
-              className="h-3/4 flex items-center justify-center relative"
-              key={link.hash}
-              initial={{ y: -100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              //added
-              transition={{
-                ease: "linear",
-                duration: 2,
-                x: { duration: 1 },
-              }}
-              //
+    <header className="fixed top-0 left-0 right-0 z-[999] bg-white/80 dark:bg-stone-950/80 backdrop-blur-md">
+      <nav className="max-w-[1440px] mx-auto px-4 md:px-10 lg:px-12 py-6">
+        <div className="flex items-center justify-between pl-3 sm:pl-4 md:pl-5 lg:pl-8">
+          {/* Left: Name/Logo */}
+          <Link
+            href="/#home"
+            className="text-[16px] font-normal text-[#1e1e1e] dark:text-white hover:opacity-70 transition-opacity"
+            onClick={() => {
+              setActiveSection("Home");
+              setTimeOfLastClick(Date.now());
+            }}
+          >
+            <TextScramble
+              as="span"
+              duration={1.2}
+              speed={0.03}
+              trigger={true}
             >
-              <Link
-                className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
-                  {
-                    "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
-                  }
-                )}
-                href={link.hash}
-                onClick={() => {
-                  setActiveSection(link.name);
-                  setTimeOfLastClick(Date.now());
-                }}
-              >
-                {link.name}
+              Alex Hsu
+            </TextScramble>
+          </Link>
 
-                {link.name === activeSection && (
-                  <motion.span
-                    className="bg-gray-200 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
-                    layoutId="activeSection"
-                    transition={{
-                      type: "spring",
-                      stiffness: 300,
-                      damping: 30,
-                    }}
-                  ></motion.span>
-                )}
-              </Link>
-            </motion.li>
-          ))}
-        </ul>
+          {/* Right: Navigation Links */}
+          <ul className="flex items-center gap-8">
+            {navLinks.map((link, index) => (
+              <li key={link.hash}>
+                <Link
+                  className="hover:opacity-70 transition-opacity"
+                  href={link.hash}
+                  onClick={() => {
+                    setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
+                  }}
+                >
+                  <TextScramble
+                    as="span"
+                    duration={1.2}
+                    speed={0.03}
+                    trigger={true}
+                    className={clsx(
+                      "text-[14px] font-light lowercase",
+                      {
+                        "text-[#1e1e1e] dark:text-white opacity-60": activeSection !== link.name,
+                        "text-[#1e1e1e] dark:text-white opacity-100": activeSection === link.name,
+                      }
+                    )}
+                  >
+                    {link.name.toLowerCase()}
+                  </TextScramble>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
+
+      {/* Scroll Progress Bar */}
+      <div className="absolute bottom-0 left-0 w-full">
+        {/* Gray baseline */}
+        <div className="absolute left-0 bottom-0 h-[1px] w-full bg-gray-200 dark:bg-gray-800" />
+        {/* Progress indicator */}
+        <ScrollProgress
+          className="absolute bottom-0 h-[1px] bg-white dark:bg-white"
+        />
+      </div>
     </header>
   );
 }
