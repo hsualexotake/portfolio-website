@@ -3,7 +3,7 @@ import { Inter, Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
+// import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import Header from "@/components/header";
 
@@ -31,9 +31,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="dark !scroll-smooth">
       <body
-        className={`${inter.className} ${plusJakarta.variable} ${robotoMono.variable} bg-white dark:bg-stone-950 text-black dark:text-white`}
+        className={`${inter.className} ${plusJakarta.variable} ${robotoMono.variable} bg-stone-950 text-white`}
       >
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
@@ -41,7 +41,7 @@ export default function RootLayout({
             {children}
             <Footer />
             <Toaster position="top-right" />
-            <ThemeSwitch />
+            {/* <ThemeSwitch /> */}
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>

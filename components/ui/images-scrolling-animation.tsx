@@ -136,9 +136,9 @@ const ExperienceScrollingAnimation = ({
     <main
       ref={container}
       className="relative flex w-full flex-col items-center justify-center
-                 pb-[50vh] pt-[5vh]
-                 sm:pb-[60vh] sm:pt-[8vh]
-                 lg:pb-[70vh] lg:pt-[10vh]"
+                 pb-[10vh] pt-[5vh]
+                 sm:pb-[15vh] sm:pt-[8vh]
+                 lg:pb-[20vh] lg:pt-[10vh]"
     >
       {experiences.map((experience, i) => {
         const targetScale = Math.max(

@@ -25,7 +25,7 @@ export default function Experience() {
       className="bg-white dark:bg-stone-950 relative min-h-screen w-full"
       id="experience"
     >
-      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-10 lg:px-12 pt-24 pb-20">
+      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-10 lg:px-12 pt-12 pb-0">
         {/* Scrolling Animation */}
         <ExperienceScrollingAnimation experiences={experiences} />
       </div>

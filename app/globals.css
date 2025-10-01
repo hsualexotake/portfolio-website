@@ -4,10 +4,14 @@
 
 
 html {
-    --line-color: #e5e7eb
+    --line-color: rgba(255, 255, 255,.2);
+    background-color: #0c0a09;
 }
 html.dark{
     --line-color: rgba(255, 255, 255,.2);
+}
+body {
+    background-color: #0c0a09;
 }
 .borderBlack {
     @apply border border-black/10;
