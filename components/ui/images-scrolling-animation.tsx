@@ -1,7 +1,6 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import ReactLenis from "lenis/react"
 import { useRef } from "react"
 import { FiArrowUpRight } from "react-icons/fi"
 import Image from "next/image"
@@ -134,40 +133,38 @@ const ExperienceScrollingAnimation = ({
   })
 
   return (
-    <ReactLenis root>
-      <main
-        ref={container}
-        className="relative flex w-full flex-col items-center justify-center
-                   pb-[50vh] pt-[5vh]
-                   sm:pb-[60vh] sm:pt-[8vh]
-                   lg:pb-[70vh] lg:pt-[10vh]"
-      >
-        {experiences.map((experience, i) => {
-          const targetScale = Math.max(
-            SCROLL_ANIMATION_CONFIG.MIN_SCALE,
-            1 - (experiences.length - i - 1) * SCROLL_ANIMATION_CONFIG.SCALE_DECREMENT_PER_CARD
-          )
-          const rangeStart = i * SCROLL_ANIMATION_CONFIG.SCROLL_RANGE_START_MULTIPLIER
-          const rangeEnd = Math.min(rangeStart + SCROLL_ANIMATION_CONFIG.SCROLL_RANGE_END_CAP, 1)
-          return (
-            <ExperienceCard
-              key={`experience_${i}`}
-              i={i}
-              company={experience.company}
-              title={experience.title}
-              year={experience.year}
-              color={experience.color}
-              textColor={experience.textColor}
-              imageUrl={experience.imageUrl}
-              progress={scrollYProgress}
-              range={[rangeStart, rangeEnd]}
-              targetScale={targetScale}
-              totalCards={experiences.length}
-            />
-          )
-        })}
-      </main>
-    </ReactLenis>
+    <main
+      ref={container}
+      className="relative flex w-full flex-col items-center justify-center
+                 pb-[50vh] pt-[5vh]
+                 sm:pb-[60vh] sm:pt-[8vh]
+                 lg:pb-[70vh] lg:pt-[10vh]"
+    >
+      {experiences.map((experience, i) => {
+        const targetScale = Math.max(
+          SCROLL_ANIMATION_CONFIG.MIN_SCALE,
+          1 - (experiences.length - i - 1) * SCROLL_ANIMATION_CONFIG.SCALE_DECREMENT_PER_CARD
+        )
+        const rangeStart = i * SCROLL_ANIMATION_CONFIG.SCROLL_RANGE_START_MULTIPLIER
+        const rangeEnd = Math.min(rangeStart + SCROLL_ANIMATION_CONFIG.SCROLL_RANGE_END_CAP, 1)
+        return (
+          <ExperienceCard
+            key={`experience_${i}`}
+            i={i}
+            company={experience.company}
+            title={experience.title}
+            year={experience.year}
+            color={experience.color}
+            textColor={experience.textColor}
+            imageUrl={experience.imageUrl}
+            progress={scrollYProgress}
+            range={[rangeStart, rangeEnd]}
+            targetScale={targetScale}
+            totalCards={experiences.length}
+          />
+        )
+      })}
+    </main>
   )
 }
 
