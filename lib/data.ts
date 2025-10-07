@@ -7,6 +7,7 @@ import smpic from "@/public/smpic.png";
 import fruition from "@/public/fruition.png";
 import cartage from "@/public/cartage.png";
 import ideaslab from "@/public/ideaslab.png";
+import nyupic from "@/public/nyupic.png";
 import constellation from "@/public/constellation.png";
 import metlife from "@/public/metlife.png";
 import timemachine from "@/public/timemachine.png";
@@ -80,7 +81,7 @@ export const experiencesData = [
     date: "Oct 2024 - May 2025",
     color: "#57068c",
     textColor: "#ffffff",
-    imageUrl: smpic,
+    imageUrl: nyupic,
   },
   {
     company: "MetLife",
@@ -199,9 +200,8 @@ export const skillsData = [
   "React",
   "PostgreSQL",
   "MongoDB",
+  "Firebase",
   "Docker",
-  "TimescaleDB",
-  "x86 Assembly",
   "PyTorch",
   "OpenCV",
   "Sci-kit Learn",
@@ -211,6 +211,7 @@ export const skillsData = [
   "Tailwind",
   "Browserbase",
   "Selenium",
+  "Figma",
   "Beautiful Soup 4"
 
 
