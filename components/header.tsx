@@ -11,9 +11,9 @@ export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
-  // Filter links to show only specific ones (exclude Home and Skills)
+  // Filter links to show only specific ones (exclude Home, Skills, and Projects)
   const navLinks = links.filter(link =>
-    ["About", "Projects", "Experience", "Contact"].includes(link.name)
+    ["About", /* "Projects", */ "Experience", "Contact"].includes(link.name)
   );
 
   return (

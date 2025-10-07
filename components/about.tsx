@@ -15,28 +15,27 @@ export default function About() {
   return (
     <section
       ref={ref}
-      className="bg-white dark:bg-stone-950 relative min-h-screen w-full flex items-center pt-0 pb-20"
+      className="bg-white dark:bg-stone-950 relative min-h-screen w-full flex items-center pt-36 pb-44"
       id="about"
     >
       <div className="w-full max-w-[1440px] mx-auto px-4 md:px-10 lg:px-12">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-8 pl-3 sm:pl-4 md:pl-5 lg:pl-8">
           {/* About title */}
           <div className="section-title">
             <p>About</p>
           </div>
 
           {/* Main content - responsive */}
-          <div ref={inViewRef} className="lg:col-span-9 text-black dark:text-gray-100">
-            <TextScramble className="section-content-text mb-4" as="p" trigger={inView}>
-              Hi, I'm Alex. Working at the intersection of software engineering
-              and design. Currently based in New York City.
-            </TextScramble>
-            <TextScramble className="section-content-text mb-4" as="p" trigger={inView}>
-              I have experience with software engineering and product design.
-            </TextScramble>
-            <TextScramble className="section-content-text" as="p" trigger={inView}>
-              fashion and tech
-            </TextScramble>
+          <div ref={inViewRef} className="lg:col-span-9 text-gray-200">
+            <p className="text-2xl mb-6">
+            Before I ever wrote a line of code, I was 13 and obsessed with trying to score the rarest sneakers. Every Saturday morning felt like a high-stakes race. I'd refresh pages, fill carts, and rush to check out before every pair sold out. But no matter how fast I clicked, I was always one step behind the bots that could grab ten pairs while I was left empty-handed.
+            </p>
+            <p className="text-2xl mb-6">
+              That frustration turned into fascination. I wanted to understand what gave them their edge and how I could build something of my own. Naturally, that curiosity led me to study how to code.
+            </p>
+            <p className="text-2xl">
+              Since then, I've graduated from <span className="text-violet-500">New York University</span> with a B.A. in <span className="text-yellow-400">Computer Science</span> and am currently based in New York City. When I'm not coding, I enjoy studying fashion, playing basketball, and spending time with my bunny, Ollie.
+            </p>
           </div>
         </div>
       </div>
